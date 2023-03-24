@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d310b092d07a94da0aaa335ad442fd, type: 3}
+  m_Name: CharacterUIBeer
+  m_EditorClassIdentifier: 
+  CharacterUI:
+  - {fileID: 21300000, guid: 63101f5278542f342b31d911ca9a90ce, type: 3}
+  - {fileID: 21300000, guid: aa5b7f9a3728ff143b5ecd87c3ad2cdb, type: 3}
+  - {fileID: 21300000, guid: 7792fb8869f83274aa4aab806cd4b827, type: 3}
+  - {fileID: 21300000, guid: 2ed497d583603ba43b4ee0f58cb864a6, type: 3}
+  - {fileID: 21300000, guid: bb84a05fbf43fb04ba0fd5631da71907, type: 3}
+  CharacterModal:
+  - {fileID: 21300000, guid: 1a0edf892e41c5b4285b0db1b51baede, type: 3}
+  - {fileID: 21300000, guid: 728a15809a1998f4ebf9b8463ac18381, type: 3}
+  - {fileID: 21300000, guid: 46b6cb33d102ebc4cb7d9f899cfefea7, type: 3}
+  - {fileID: 21300000, guid: 85c7eaaca9eb39f46a83944d29ef98fa, type: 3}
+  - {fileID: 21300000, guid: 1a0edf892e41c5b4285b0db1b51baede, type: 3}
+  Characterbot:
+  - {fileID: 21300000, guid: 2dfec3cf07b69614d85135adb4ac0616, type: 3}
+  - {fileID: 21300000, guid: b64e30f294bd58143aa7c1ce3b088c8f, type: 3}
+  - {fileID: 21300000, guid: 553dbe08ad047f240831b15cb78c4b15, type: 3}
+  - {fileID: 21300000, guid: d9ad6e7c58b7faa4da24b92e9b0e940e, type: 3}
+  - {fileID: 21300000, guid: d9ad6e7c58b7faa4da24b92e9b0e940e, type: 3}
+  ImageButtonTopping:
+  - {fileID: 9135415502441336617, guid: 3e589ddb6acdbb54ab80e6d42556d8ef, type: 3}
+  - {fileID: 9135415502441336617, guid: 3fa24e8215052174a8bb41e4572c2959, type: 3}
+  - {fileID: 9135415502441336617, guid: 279c8c168ef001a44b0f4080de492315, type: 3}
+  - {fileID: 9135415502441336617, guid: 520a6ebb1796f0746885efe3aa7ca5b0, type: 3}
+  - {fileID: 9135415502441336617, guid: 4fc009bbad8b8e147a9bd9415fde5e53, type: 3}
+  - {fileID: 9135415502441336617, guid: 29a8aaae832e84544b9d1e4529728bd4, type: 3}
+  DIYImageButtonTopping: []
+  FrutisList:
+  - {fileID: 4164678201194337364, guid: 1714c007e3bb4284596aa31e52f91596, type: 3}
+  - {fileID: 4164678201194337364, guid: 6521b57b2ee447d4a988d497dd1fe204, type: 3}
+  - {fileID: 1165971719763804556, guid: 923d3f2e72c991746a3f16ad4390b6ba, type: 3}
+  - {fileID: 1165971719763804556, guid: 2c47665babc11cf4d8df6cec6791781f, type: 3}
+  - {fileID: 1165971719763804556, guid: 42dc8f4f17f0a60439054b379f9b669b, type: 3}
+  - {fileID: 1165971719763804556, guid: 14c7959b3b99f13458fa273a12e627bd, type: 3}
+  - {fileID: 1165971719763804556, guid: 0ee04b79423773b479ba0acd189dda48, type: 3}
+  - {fileID: 1165971719763804556, guid: f6e65dcbce08127428e07ba904969175, type: 3}
+  - {fileID: 4164678201194337364, guid: 7c8e8a7acc51285448f41b623b9ad9da, type: 3}
+  - {fileID: 4164678201194337364, guid: 494814eb654231f44a960b90d88273f6, type: 3}
+  - {fileID: 1165971719763804556, guid: 089546f7efdf91e4693c0255abec6979, type: 3}
+  - {fileID: 1165971719763804556, guid: 4e4b3375087fd1f4580a65f168802af4, type: 3}
+  ImageTichxanh: {fileID: 21300000, guid: 49b8be2509103d14cb4e86bd87ad7243, type: 3}
