@@ -14,7 +14,7 @@ public class DIY2_ButtonCLone : MonoBehaviour
     }
     public void PrintCountButton()
     {
-      
+       
         DIYController.instance.Man1[UIManager.Instance.CharacterType].SetActive(false);
         var position = new Vector2(UnityEngine.Random.Range(FuritsManager.instance.FutirsPointThrow[2].position.x, FuritsManager.instance.FutirsPointThrow[3].position.x), FuritsManager.instance.FutirsPointThrow[2].position.y+2);
         for (int i = 0; i < 20; i++)
@@ -24,11 +24,9 @@ public class DIY2_ButtonCLone : MonoBehaviour
                 Instantiate(FuritsManager.instance.characterUIList[UIManager.Instance.CharacterType].FrutisList[Return(2 * i, 2 * i + 1)], position, Quaternion.identity).transform.SetParent(DIYController.instance.Save);
             }
         }
-
         DIYController.instance.buttonname = gameObject.name;
         DIYController.instance.isBG = true;
         DIYController.instance.creatModalManin(gameObject.name);
-     
     }
     public void destroy()
     {

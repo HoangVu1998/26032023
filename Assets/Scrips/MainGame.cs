@@ -17,7 +17,9 @@ public class MainGame : MonoBehaviour
         {
             MainGameController.instance.isChangeBot = false;
             gameOBJ = Instantiate(MainGameController.instance.ModalDefult);
+            Debug.Log("Hoang");
             LevelController.isShake = false;
+         
         }
         if (MainGameController.instance.destroyNow)
         {

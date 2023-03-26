@@ -9,13 +9,13 @@ public class BgShow : MonoBehaviour
     public List<Sprite> imageList;
     public GameObject BgDefult;
     Image imageBG;
-    private void Start()
+    private void Awake()
     {
-        imageBG = BgDefult.GetComponent<Image>();  
+        imageBG = BgDefult.GetComponent<Image>();
         foreach (Button button in gameObject.transform.GetComponentsInChildren<Button>())
         {
             buttonList.Add(button);
-            button.onClick.AddListener(() => OnClick(button));  
+            button.onClick.AddListener(() => OnClick(button));
         }
     }
     private void OnClick(Button clickedButton)
@@ -27,9 +27,9 @@ public class BgShow : MonoBehaviour
             if (buttonList[i] == clickedButton)
             {
                 imageBG.sprite = imageList[i];
-                if (!DIYController.instance.isBG) 
+                if (!DIYController.instance.isBG)
                 {
-                    PlayerPrefs.SetInt(DIYController.instance.buttonname+ "BG", i);
+                    PlayerPrefs.SetInt(DIYController.instance.buttonname + "BG", i);
                     PlayerPrefs.Save();
                 }
             }
@@ -37,7 +37,7 @@ public class BgShow : MonoBehaviour
     }
     public void BacktoUI()
     {
-        imageBG.sprite = imageList[8];
+      //  imageBG.sprite = imageList[8];
     }
 }
 

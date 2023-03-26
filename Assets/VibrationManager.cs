@@ -15,7 +15,7 @@ public class VibrationManager : MonoBehaviour
     }
     public void Vibrate()
     {
-        Vibration.Vibrate();    
+        Vibration.Vibrate();
     }
 
     public  void Vibrate(long milliseconds)

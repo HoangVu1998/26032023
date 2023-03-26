@@ -102,8 +102,6 @@ public class DIYMain : MonoBehaviour
         {
             Man4DIY.SetActive(true);
            // DIYControllerClone.MainGameDIY.SetActive(true);
-            DIYControllerClone.BG.SetActive(false);
-
             foreach (var topping in DIYControllerClone.characterDIY[UIManager.Instance.CharacterType].DIYImageButtonTopping)
             {
                 GameObject toppingSpawn = Instantiate(topping, Content);

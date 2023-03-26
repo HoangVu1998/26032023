@@ -68,6 +68,11 @@ public class BeerManager1 : MonoBehaviour
         lowPassFilterFactor = accelerometerUpdateInterval / lowPassKernelWidthInSeconds;
         shakeDetectionThreshold *= shakeDetectionThreshold;
         lowPassValue = Input.acceleration;
+        foreach(var item in ListDrinkAfterManDinkMan4)
+        {
+            DIYController.instance.man4.Add(item);
+        }
+        DIYController.instance.man4Total.Add(man4);
     }
     private void Update()
     {
@@ -242,8 +247,10 @@ public class BeerManager1 : MonoBehaviour
     public void OffListDrinkAfterManDinkMan4()
     {
         DIYController.instance.isBG = false;
-        foreach (var item in ListDrinkAfterManDinkMan4)
+        foreach (var item in DIYController.instance.man4)
+        {
             item.SetActive(false);
+        }
     }
     public void testShake()
     {

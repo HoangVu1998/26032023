@@ -58,11 +58,17 @@ public class MainGameController : MonoBehaviour
         isChangeBot = false;
         MainGame.SetActive(true);
         spriteRendererMain.sprite = characterUI[UIManager.Instance.CharacterType].CharacterModal[UIManager.Instance.IndexerCharacterType];
-        if(characterUI[UIManager.Instance.CharacterType].Characterbot[UIManager.Instance.IndexerCharacterType])
+
         spriteRendererBot.sprite = characterUI[UIManager.Instance.CharacterType].Characterbot[UIManager.Instance.IndexerCharacterType];
+
         // tạo ra các button bấm chọn topping beer - nằm dưới content
         foreach (var topping in characterUI[UIManager.Instance.CharacterType].ImageButtonTopping)
         {
+            if (topping == null)
+            {
+                continue;
+            }
+
             GameObject toppingSpawn = Instantiate(topping, Content);
             toppingSpawn.transform.SetParent(Content);
         }

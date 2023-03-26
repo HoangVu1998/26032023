@@ -26,7 +26,6 @@ public class DIYController : MonoBehaviour
     public bool isMan4;
     public bool isMan5;
     public bool isMan7;
-    public GameObject BG;
     public GameObject CocDefult;
 
     public string buttonname;
@@ -40,7 +39,10 @@ public class DIYController : MonoBehaviour
     public bool isBG;
 
     public List<GameObject> ListDIY;
-
+    
+    //list man 4 bg and icon
+    public List<GameObject> man4;
+    public List<GameObject> man4Total;
     private void Start()
     {
         isStep = false;
@@ -79,19 +81,25 @@ public class DIYController : MonoBehaviour
         {
             DIY.SetActive(false);
         }
+        foreach(var item in man4Total)
+        {
+            item.SetActive(false);
+        }
         ListDIY[UIManager.Instance.numberTypeDIY].SetActive(true);
     }
     public void creatModalManin(string nameOBj)
     {
+        
+        BeerManager1.instance.man4.SetActive(true);
+        foreach (var item in man4)
+        {
+            item.SetActive(true);
+        }
         spriteRenderer.sprite = DIYController.instance.characterDIY[UIManager.Instance.CharacterType].CharacterModal[PlayerPrefs.GetInt(nameOBj + "CharacterType")];
         spriteRendererBotDIY.sprite = DIYController.instance.characterDIY[UIManager.Instance.CharacterType].Characterbot[PlayerPrefs.GetInt(nameOBj + "CharacterType")];
         Man4[UIManager.Instance.CharacterType].SetActive(true);
         var a = Instantiate(ModalDefult);
         a.transform.SetParent(Save);
-        foreach (var item in BeerManager1.instance.ListDrinkAfterManDinkMan4)
-        {
-            item.SetActive(true);
-        }
     }
     public void backToUigame()
     {

@@ -25,11 +25,14 @@ public class Panel_Man2_MorePages : MonoBehaviour
         {
             Transform child = button.transform.GetChild(0);
             child.gameObject.SetActive(false);
+           
         }
         for (int i = 0; i < buttonList.Count; i++)
         {
             if (buttonList[i] == clickedButton)
             {
+                VibrationManager.instance.Vibrate(80);
+                TestMusic.Instance.Play("TapSound");
                 DIYController.instance.buttonname= buttonList[i].name;  
                 PlayerPrefs.SetInt(buttonList[i].name, i);
                 DIYController.instance.buttonseLect = i;

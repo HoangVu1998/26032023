@@ -129,18 +129,17 @@ public class ModalMove : MonoBehaviour
                 {
                     TestMusic.Instance.playUpdate("HeavySwallow");
                     moveLerp(TargetLeftTop);
-                  
                 }
             }
-        
     }
 }
     public void moveLerp(Transform target)
     {
-        transform.position = Vector3.Lerp(transform.position, target.position, 1.2f * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, target.position, 1.5f * Time.deltaTime);
     }
     public virtual void moveToWards(Transform target)
     {
-        transform.position = Vector2.MoveTowards(transform.position, target.position,1.5f* Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, target.position,1.25f*Time.deltaTime);
     }
 }
+

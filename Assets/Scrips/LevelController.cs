@@ -13,13 +13,13 @@ public class LevelController : MonoBehaviour
     {
         if (isShake == true)
         {
-            Debug.Log("LevelCOntroller");
             var a = Instantiate(modalType[numberColor], gameOrigannalPosition.position, Quaternion.identity);
             isShake = false;
             if (DetectShake.instance.uonghet == true)
             {
                 Destroy(a);
             }
+            Debug.Log("HOang00");
         }
     }
     public void chooseModalType(int color)
@@ -31,6 +31,7 @@ public class LevelController : MonoBehaviour
             Destroy(b);
             Debug.Log(DetectShake.instance .uonghet);
         }
+        Debug.Log("HOang01");
 
     }
 }
